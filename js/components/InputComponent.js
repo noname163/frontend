@@ -4,7 +4,13 @@ function InputComponent(props) {
             {props.requireLabel && (
                 <label htmlFor={props.inputId}>{props.labelName}</label>
             )}
-            <input id={props.inputId} type={props.type} className={props.className} />
+            <input
+                id={props.inputId}
+                onChange={props.onChange}
+                type={props.type}
+                className={props.className}
+            />
+            {props.error && <div className="invalid-feedback">{props.error}</div>}
         </div>
     );
 }

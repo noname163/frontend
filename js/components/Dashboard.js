@@ -10,7 +10,7 @@ function Dashboard() {
 
     return (
         <div>
-            <h2>Dashboard</h2>
+            <CustomHeader title="Dashboard" name="Dashboard" />
             <p>You clicked {count} times</p>
             <button onClick={() => setCount(count + 1)}>
                 Click me

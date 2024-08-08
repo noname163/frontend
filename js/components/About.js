@@ -11,5 +11,8 @@ function About() {
             .then(html => setContent(html));
     }, []);
 
-    return <div dangerouslySetInnerHTML={{ __html: content }} />;
+    return <>
+        <CustomHeader title="About Us" name="About Us" />
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+    </>;
 }
